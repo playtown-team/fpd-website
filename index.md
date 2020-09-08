@@ -8,16 +8,16 @@ page_sections:
   logo: "/uploads/2018/06/21/forestry-full.svg"
   navigation:
   - link: "/"
-    link_text: Home
+    link_text: Inicio
   - link: "#features"
-    link_text: Features
+    link_text: Funcionalidad
   - link: "#pricing"
     link_text: Pricing
   - link: "#team"
-    link_text: Team
+    link_text: Equipo
   cta:
     url: https://github.com/forestryio/ubuild-jekyll/archive/master.zip
-    button_text: Download
+    button_text: Descargar iOS
 - template: hero-banner-w-image
   block: hero-2
   headline: uBuild <br><strong>design blocks</strong>
