@@ -89,9 +89,9 @@ p {
       text-transform: uppercase;
       letter-spacing: 2px;
       font-size: 11px;
-      color: #222222;
+      color: #FFF;
       &:focus {
-        color: #222222;
+        color: #FFF;
       }
       &:hover, &:focus:hover {
         color: $theme-primary;
@@ -140,9 +140,9 @@ p {
         }
       }
       .nav > li > a {
-        color: #222222;
+        color: #FFF;
         &:focus {
-          color: #222222;
+          color: #FFF;
         }
         &:hover, &:focus:hover {
           color: $theme-primary;
