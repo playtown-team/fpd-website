@@ -769,12 +769,12 @@ if (typeof jQuery === 'undefined') {
     var $parent  = getParent($this)
     var isActive = $parent.hasClass('open')
 
-    clearMenus()
+    clearMenús()
 
     if (!isActive) {
       if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
         // if mobile we use a backdrop because click events don't delegate
-        $('<div class="dropdown-backdrop"/>').insertAfter($(this)).on('click', clearMenus)
+        $('<div class="dropdown-backdrop"/>').insertAfter($(this)).on('click', clearMenús)
       }
 
       var relatedTarget = { relatedTarget: this }
@@ -826,7 +826,7 @@ if (typeof jQuery === 'undefined') {
     $items.eq(index).trigger('focus')
   }
 
-  function clearMenus(e) {
+  function clearMenús(e) {
     if (e && e.which === 3) return
     $(backdrop).remove()
     $(toggle).each(function () {
@@ -891,7 +891,7 @@ if (typeof jQuery === 'undefined') {
   // ===================================
 
   $(document)
-    .on('click.bs.dropdown.data-api', clearMenus)
+    .on('click.bs.dropdown.data-api', clearMenús)
     .on('click.bs.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
     .on('click.bs.dropdown.data-api', toggle, Dropdown.prototype.toggle)
     .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
