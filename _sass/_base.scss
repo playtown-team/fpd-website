@@ -131,10 +131,10 @@ p {
       }
     }
     &.affix {
-      background-color: white;
+      background-color: #353535;
       border-color: rgba(34, 34, 34, 0.1);
       .navbar-header .navbar-brand {
-        color: #222222;
+        color: #fff;
         &:hover, &:focus {
           color: $theme-primary;
         }
