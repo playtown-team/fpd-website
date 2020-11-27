@@ -4,9 +4,8 @@
   const appParam = urlParams.getAll('app')
   var s = document.getElementById('mainNav');
 
-  console.log("appParam",appParam)
-  if (appParam) {
-    console.log("entro")
+  // console.log("appParam",appParam)
+  if (appParam[0]) {
     s.style.display = "none";
   }
 </script>
