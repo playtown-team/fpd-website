@@ -3,7 +3,10 @@
   const urlParams = new URLSearchParams(queryString);
   const appParam = urlParams.getAll('app')
   var s = document.getElementById('mainNav');
+
+  console.log("appParam",appParam)
   if (appParam) {
+    console.log("entro")
     s.style.display = "none";
   }
 </script>
