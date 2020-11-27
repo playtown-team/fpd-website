@@ -1,8 +1,8 @@
 <script>
   const queryString = window.location.search;
-  const urlParams = URLSearchParams.getAll("app");
-  console.log("urlParams",urlParams)
-  console.log("urlParams",queryString)
+  const urlParams = new URLSearchParams(queryString);
+
+  console.log("urlParams",urlParams.getAll('app'))
   var s = document.getElementById('mainNav');
   s.style.display = "none";
 </script>
